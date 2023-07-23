@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gen-ai"
+version = "0.1.0"
+description = ""
+authors = ["Binay Prasanna Jena <binay.bapu@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gen_ai"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+openai = "^0.27.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
