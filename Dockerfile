@@ -17,8 +17,8 @@ COPY pyproject.toml poetry.lock /app/
 
 
 # install poetry
-RUN curl -sSL https://install.python-poetry.org | python3 -
-# RUN pip install poetry
+# RUN curl -sSL https://install.python-poetry.org | python3 -
+RUN pip install poetry
 ENV PATH $PATH:$HOME/.poetry/bin:$HOME/.local/bin
 ENV PYTHONPATH $PYTHONPATH:$HOME/.local/lib/python3.10/site-packages
 

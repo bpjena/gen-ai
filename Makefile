@@ -13,7 +13,7 @@ clean: remove_stopped_containers delete_images
 
 env-up:
 	docker build -t gen-ai:local .
-	docker run -it --rm -u genai -v ${HOME}/.aws:/home/genai/.aws --env-file .env -w /app deng-jobs:local /bin/bash
+	docker run -it --rm -u genai -v ${HOME}/.aws:/home/genai/.aws --env-file .env -w /app gen-ai:local /bin/bash
 
 init:
 	poetry install
